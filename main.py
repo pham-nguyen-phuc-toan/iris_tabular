@@ -13,7 +13,7 @@ st.image(image)
 input = open('lrc_iris.pkl', 'rb')
 model = pkl.load(input)
 
-st.header('Choose the size of iris flower sepal and petal')
+st.header('Choose the size of flower sepal and petal size')
 
 sepal_length = st.slider('Sepal length (cm)', 0.0, 20.0, 0.0, 0.1)
 sepal_width = st.slider('Sepal width (cm)', 0.0, 20.0, 0.0, 0.1)
