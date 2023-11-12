@@ -11,10 +11,10 @@ model = pkl.load(input)
 
 st.header('Upload chest X-Ray image')
 
-sepal_length = st.slider('Sepal length (cm)', 0, 20, 0.1)
-sepal_width = st.slider('Sepal width (cm)', 0, 20, 0.1)
-petal_length = st.slider('Petal length (cm)', 0, 20, 0.1)
-petal_width = st.slider('Petal width (cm)', 0, 20, 0.1)
+sepal_length = st.slider('Sepal length (cm)', 0, 20, 0, 0.1)
+sepal_width = st.slider('Sepal width (cm)', 0, 20, 0, 0.1)
+petal_length = st.slider('Petal length (cm)', 0, 20, 0, 0.1)
+petal_width = st.slider('Petal width (cm)', 0, 20, 0, 0.1)
 
 if sepal_length >= 0 and sepal_width >= 0 and petal_length >= 0 and petal_width >= 0:
     if st.button('Predict'):
